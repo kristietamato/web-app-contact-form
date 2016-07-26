@@ -1,3 +1,7 @@
+<?php
+  include 'php/contact-form.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
