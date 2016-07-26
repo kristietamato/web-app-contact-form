@@ -9,11 +9,21 @@
     $subject = 'Message from contactform.tamato.org';
     $body = "From: $name \n E-Mail: $email \n Message: \n $message";
 
-    // Send the email
-    if (mail ($to, $subject, $body, $from)) {
-      $result='<div class="alert alert-success">Your message is sent.</div>';
-    } else {
-      $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+    // validate human
+    if ($human === 5) {
+      $isHuman = TRUE;
+    } 
+    if ($human !== 5) {
+      $result='<div class="alert alert-danger">There was an error sending your message. Please try again later.</div>';
+    }
+
+    // If human, send the email
+    if ($isHuman) {
+      if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success">Thank you, your message is sent.</div>';
+      } else {
+        $result='<div class="alert alert-danger">There was an error sending your message. Please try again later.</div>';
+      }
     }
   }
 ?>
