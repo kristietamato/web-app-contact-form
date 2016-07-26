@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Contact Form</title>
+    <title>Tamato | Contact Form</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
   <body>
     <div class="container">
       <div class="jumbotron text-center">
-        <h2>Simple Contact Form</h2>
+        <h2>Bootstrap Contact Form with Validation</h2>
       </div>
     </div>
     <div class="col-md-6 col-md-offset-3">
