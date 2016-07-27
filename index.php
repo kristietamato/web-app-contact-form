@@ -49,7 +49,7 @@
             <input type="text" class="form-control" id="name" name="name"
               placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>"
               ng-model="user.name" ng-required="true">
-            <span class="error validationerror" ng-show="myform.name.$invalid && myform.name.$touched">
+            <span class="error" ng-show="myform.name.$invalid && myform.name.$touched">
               Please enter your name.</span>
           </div>
         </div>
@@ -61,7 +61,7 @@
               placeholder="example@domain.com"
               value="<?php echo htmlspecialchars($_POST['email']); ?>"
               ng-model="user.email" ng-required="true">
-            <span class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">
+            <span class="error" ng-show="myform.email.$invalid && myform.email.$touched">
               Please enter a valid email.</span>
           </div>
         </div>
@@ -73,7 +73,7 @@
               ng-model="user.message" ng-required="true">
               <?php echo htmlspecialchars($_POST['message']);?>
             </textarea>
-            <span class="error validationerror" ng-show="myform.message.$invalid && myform.message.$touched">
+            <span class="error" ng-show="myform.message.$invalid && myform.message.$touched">
               Please enter your message.</span>
           </div>
         </div>
@@ -83,8 +83,13 @@
           <div class="col-sm-10">
             <input type="text" class="form-control" id="human" name="human"
               placeholder="Your Answer" ng-model="user.human" ng-required="true">
-            <span class="error validationerror" ng-show="myform.human.$invalid && myform.human.$touched">
-              Please enter the correct anti-spam answer.</span>
+            <span class="error" ng-show="myform.human.$invalid && myform.human.$touched">
+              Please enter an answer.
+            </span>
+            <span class="error" ng-if="myform.human.$touched && user.human !== '5'">
+              Your answer is incorrect.
+            </span>
+
           </div>
         </div>
         

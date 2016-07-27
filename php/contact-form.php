@@ -1,5 +1,5 @@
 <?php
-  if (isset($_POST["submit"])) {
+  if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
@@ -12,9 +12,6 @@
     // validate human
     if ($human === 5) {
       $isHuman = TRUE;
-    } 
-    if ($human !== 5) {
-      $result='<div class="alert alert-danger">There was an error sending your message. Please try again later.</div>';
     }
 
     // If human, send the email
