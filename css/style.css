@@ -1,3 +1,11 @@
+body {
+  background-color: #eeeeee;
+}
+
+.jumbotron {
+  padding: 20px 0 20px 0;
+}
+
 input.ng-invalid.ng-touched {
   border: 1px solid #DA3637;
 }

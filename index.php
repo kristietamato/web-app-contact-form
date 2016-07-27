@@ -38,14 +38,13 @@
         name="myform" novalidate>
 
         <div class="form-group text-center">
-          <div class="col-sm-10 col-sm-offset-2">
+          <div class="col-sm-12">
             <?php echo $result; ?>
           </div>
         </div>
         
         <div class="form-group">
-          <label for="name" class="col-sm-2 control-label">Name</label>
-          <div class="col-sm-10">
+          <div class="col-sm-12">
             <input type="text" class="form-control" id="name" name="name"
               placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>"
               ng-model="user.name" ng-required="true">
@@ -55,8 +54,7 @@
         </div>
         
         <div class="form-group">
-          <label for="email" class="col-sm-2 control-label">Email</label>
-          <div class="col-sm-10">
+          <div class="col-sm-12">
             <input type="email" class="form-control" id="email" name="email" 
               placeholder="example@domain.com"
               value="<?php echo htmlspecialchars($_POST['email']); ?>"
@@ -67,10 +65,9 @@
         </div>
         
         <div class="form-group">
-          <label for="message" class="col-sm-2 control-label">Message</label>
-          <div class="col-sm-10">
+          <div class="col-sm-12">
             <textarea class="form-control" rows="4" name="message" 
-              ng-model="user.message" ng-required="true">
+              ng-model="user.message" ng-required="true" placeholder="Message...">
               <?php echo htmlspecialchars($_POST['message']);?>
             </textarea>
             <span class="error" ng-show="myform.message.$invalid && myform.message.$touched">
@@ -79,10 +76,9 @@
         </div>
         
         <div class="form-group">
-          <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-          <div class="col-sm-10">
+          <div class="col-sm-12">
             <input type="text" class="form-control" id="human" name="human"
-              placeholder="Your Answer" ng-model="user.human" ng-required="true">
+              placeholder="2 + 3 = ?" ng-model="user.human" ng-required="true">
             <span class="error" ng-show="myform.human.$invalid && myform.human.$touched">
               Please enter an answer.
             </span>
