@@ -25,7 +25,7 @@
       src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
     </script>
   </head>
-  
+
   <body>
     <div class="container">
       <div class="jumbotron text-center">
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="col-md-6 col-md-offset-3">
-      
+
       <form class="form-horizontal" role="form" method="post" action="http://contactform.tamato.org/" 
         name="myform" novalidate>
 
@@ -42,7 +42,7 @@
             <?php echo $result; ?>
           </div>
         </div>
-        
+
         <div class="form-group">
           <div class="col-sm-12">
             <input type="text" class="form-control" id="name" name="name"
@@ -52,7 +52,7 @@
               Please enter your name.</span>
           </div>
         </div>
-        
+
         <div class="form-group">
           <div class="col-sm-12">
             <input type="email" class="form-control" id="email" name="email" 
@@ -63,7 +63,7 @@
               Please enter a valid email.</span>
           </div>
         </div>
-        
+
         <div class="form-group">
           <div class="col-sm-12">
             <textarea class="form-control" rows="4" name="message" 
@@ -74,7 +74,7 @@
               Please enter your message.</span>
           </div>
         </div>
-        
+
         <div class="form-group">
           <div class="col-sm-12">
             <input type="text" class="form-control" id="human" name="human"
